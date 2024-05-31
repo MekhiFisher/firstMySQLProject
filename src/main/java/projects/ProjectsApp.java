@@ -61,9 +61,7 @@ public class ProjectsApp {
 		project.setProjectName(projectName);
 		project.setEstimatedHours(estimatedHours);
 		project.setActualHours(actualHours);
-		while(difficulty <= 5) {
-			project.setDifficulty(difficulty);
-		}
+		project.setDifficulty(difficulty);
 		project.setNotes(notes);
 		
 		Project dbProject = projectService.addProject(project);
